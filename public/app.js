@@ -54,7 +54,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     console.error('Error: Response is not an array');
                 }
             })
-            .catch(error => console.error('Error fetching tasks:', error));
+            .catch(error => console.log(error));
     }
 
     // function to edit a task
