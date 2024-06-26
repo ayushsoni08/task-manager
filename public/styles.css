@@ -62,6 +62,22 @@ main{
     margin-top: 20px,
 }
 
+#tasks-list {
+    list-style: none;
+    padding: 0;
+}
+
+#tasks-list li {
+    background: white;
+    padding: 10px;
+    margin-top: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+#tasks-list li:hover {
+    transform: translateY(-5px);
+}
 
 /* Responsive design */
 @media (max-width: 768px) {
