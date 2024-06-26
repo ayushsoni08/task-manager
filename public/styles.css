@@ -1,0 +1,78 @@
+/* General body styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background: black;
+    color: #fff;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+main{
+    padding: 20px;
+    margin-top: 20px;
+}
+
+#task-form {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+#task-form label {
+    display: block;
+    margin: 10px 0 5px;
+    font-weight: bold;
+}
+
+#task-form input[type="text"],
+#task-from input[type="date"],
+#task-form textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    transition: border-color 0.3s ease-in-out;
+}
+
+#task-form button {
+    background: gray;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+#task-form button:hover {
+    background: black;
+}
+
+#tasks-list-section {
+    margin-top: 20px,
+}
+
+
+/* Responsive design */
+@media (max-width: 768px) {
+    header, footer {
+        text-align: center;
+    }
+
+    #task-form input[type="text"],
+    #task-form input[type="date"],
+    #task-form textarea,
+    #task-form button {
+        width: 100%;
+    }
+}
