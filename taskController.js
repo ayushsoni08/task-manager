@@ -3,6 +3,7 @@ import Task from './taskModel.js';
 
 const router = express.Router();
 
+
 // GET all tasks
 router.get('/', async (req, res) => {
     try {
@@ -58,7 +59,7 @@ router.patch('/:id', getTask, async (req, res) => {
 router.delete('/:id', getTask, async (req, res) => {
     try {
         await Task.findByIdAndDelete(res.task._id);
-        res.json({ message: 'Task has been deleted' });
+        res.json({ message: 'Task deleted' });
     } catch (error) {
         res.status(500).json({ message: error.message });
     }
